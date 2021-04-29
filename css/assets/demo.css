@@ -28,10 +28,10 @@ Header 17
   display: block;
 }
 
-.header17 .h17-nav .h17nav-bar:hover .nav-link,
+/* .header17 .h17-nav .h17nav-bar:hover .nav-link,
 .header17 .h17-nav .h17nav-bar.active .nav-link {
   color: #ff4d7e;
-}
+} */
 
 .header17 .h17-nav .h17nav-bar:last-child {
   margin-left: 10px;

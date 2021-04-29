@@ -1,7 +1,3 @@
-@import url("images/icons/animate.css");
-@import url("css/assets/all.min.css");
-/* @import url(images/icons/iconmind/iconmind.css); */
-@import url("images/icons/themify-icons.css");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800");
 
 :root {
@@ -14218,6 +14214,7 @@ Footer 4
 .footer4 .f4-bottom-bar {
   padding-top: 10px;
   margin-top: 20px;
+  border-top: 1px solid #8c89894a;
 }
 
 .footer4 .f4-bottom-bar a {

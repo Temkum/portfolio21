@@ -48,3 +48,24 @@
     margin-left: auto;
   }
 } */
+
+@media (max-width: 576px) {
+  .info-nav .contact {
+    margin-top: 15px;
+  }
+
+  .phone,
+  .email,
+  .social,
+  .web {
+    margin-left: 8% !important;
+  }
+}
+
+ion-icon {
+  font-size: 45px;
+}
+
+.menu:hover {
+  color: black;
+}
