@@ -1,4 +1,5 @@
 $(function () {
+  "use strict";
   // filter items on button click
   $(".filterby").on("click", "a", function () {
     const filterValue = $(this).attr("data-filter");
@@ -7,7 +8,7 @@ $(function () {
     });
   });
   // init Isotope
-  var $grid = $(".portfolio-box").isotope({
+  const $grid = $(".portfolio-box").isotope({
     itemSelector: ".filter",
     percentPosition: true,
     masonry: {
@@ -18,16 +19,16 @@ $(function () {
   //****************************
   // Isotope Load more button
   //****************************
-  var initShow = 6; //number of images loaded on init & onclick load more button
-  var counter = initShow; //counter for load more button
-  var iso = $grid.data("isotope"); // get Isotope instance
+  const initShow = 4; //number of images loaded on init & onclick load more button
+  const counter = initShow; //counter for load more button
+  const iso = $grid.data("isotope"); // get Isotope instance
 
   loadMore(initShow); //execute function onload
 
   function loadMore(toShow) {
     $grid.find(".hidden").removeClass("hidden");
 
-    var hiddenElems = iso.filteredItems
+    const hiddenElems = iso.filteredItems
       .slice(toShow, iso.filteredItems.length)
       .map(function (item) {
         return item.element;
