@@ -54,10 +54,7 @@
   }
 }
 
-@media (max-width: 992px) {
-
-  
-}
+@media (max-width: 992px) {}
 
 ion-icon {
   font-size: 45px;
@@ -79,4 +76,39 @@ ion-icon {
 
 .footer4 a {
   color: #fff !important;
+}
+
+.feature46 {
+  background-repeat: no-repeat;
+  background-position: right 35% bottom 45%;
+
+}
+
+@media (min-width: 768px) and (max-width: 986px) {
+  .feature46 {
+    background-position: right 50% bottom 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .feature46 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url('/images/tem.jpg') !important;
+    background-position: center;
+  }
+
+  .subtitle {
+    color: #c2c6d0;
+
+  }
+
+  .title-feature {
+    color: white;
+  }
+}
+
+@media (min-width: 987px) {
+  .feature46 {
+    background-position: right 30% bottom 50%;
+  }
 }
