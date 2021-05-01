@@ -9,15 +9,7 @@
   }
 }
 
-@media (min-width: 992px) {
 
-  .container,
-  .container-sm,
-  .container-md,
-  .container-lg {
-    max-width: 960px;
-  }
-}
 
 @media (min-width: 768px) {
 
@@ -62,10 +54,29 @@
   }
 }
 
+@media (max-width: 992px) {
+
+  
+}
+
 ion-icon {
   font-size: 45px;
 }
 
 .menu:hover {
   color: black;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+}
+
+.round-social a {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.footer4 a {
+  color: #fff !important;
 }
