@@ -20,8 +20,8 @@ $(function () {
   // Isotope Load more button
   //****************************
   const initShow = 6; //number of images loaded on init & onclick load more button
-  const counter = initShow; //counter for load more button
-  const iso = $grid.data("isotope"); // get Isotope instance
+  let counter = initShow; //counter for load more button
+  let iso = $grid.data("isotope"); // get Isotope instance
 
   loadMore(initShow); //execute function onload
 
