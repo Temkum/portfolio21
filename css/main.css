@@ -11,14 +11,7 @@
 
 
 
-@media (min-width: 768px) {
 
-  .container,
-  .container-sm,
-  .container-md {
-    max-width: 720px;
-  }
-}
 
 @media (max-width: 576px) {
 
@@ -41,6 +34,25 @@
   }
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
+.container-fluid {
+  padding-top: 4rem;
+}
+
+#portfolio {
+  margin: 6rem 0px;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 @media (max-width: 576px) {
   .info-nav .contact {
     margin-top: 15px;
@@ -54,7 +66,11 @@
   }
 }
 
-@media (max-width: 992px) {}
+@media (max-width:320px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+}
 
 ion-icon {
   font-size: 45px;
@@ -86,20 +102,19 @@ ion-icon {
 
 @media (min-width: 768px) and (max-width: 986px) {
   .feature46 {
-    background-position: right 50% bottom 50%;
+    background-position: right 2% bottom 50%;
   }
 }
 
 @media (max-width: 767px) {
   .feature46 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url('/images/tem.jpg') !important;
+      url('/images/tem.png') !important;
     background-position: center;
   }
 
   .subtitle {
     color: #c2c6d0;
-
   }
 
   .title-feature {

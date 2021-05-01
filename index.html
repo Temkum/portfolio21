@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio | My website</title>
 
-  <link href="css/assets/aos.css" rel="stylesheet">
   <link href="css/assets/perfect-scrollbar.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/assets/all.min.css">
   <link rel="stylesheet" href="css/assets/animate.css">
   <link rel="stylesheet" href="css/assets/themify-icons.css">
+  <link href="css/assets/aos.css" rel="stylesheet">
 
   <!-- Common style CSS -->
   <link href="css/assets/style.css" rel="stylesheet">
@@ -21,7 +21,7 @@
 
 <body class="">
 
-  <div class="main-wrapper">
+  <div class="main-wrapper" id="intro">
 
     <!-- Top header -->
     <div class="topbar">
@@ -49,11 +49,11 @@
     <!-- END top bar -->
 
     <!-- MAIN NAV -->
-    <div class="h17-main-nav animated fadeInDown justify-content-center" data-aos="fade-up">
+    <div class="h17-main-nav animated fadeInDown justify-content-center m-b-30" data-aos="fade-up">
       <div class="h-17navbar align-self-center">
         <a href="javascript:void(0)" class="close-icons tgl-cl"><i class="ti-close"></i></a>
         <ul class="nav-menu">
-          <li class="active"><a href="index.html">Intro</a></li>
+          <li class="active"><a href="#intro">Intro</a></li>
           <li><a href="#about">About Me</a></li>
           <li><a href="#portfolio">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -67,14 +67,15 @@
         </ul>
         <ul class="social-nav m-3">
           <div class="round-social">
-            <a onclick="window.open(this.href,'_blank');return false;" href="https://twitter.com/KumJude?s=09"
-              class=""><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/kum-jude-tem-031433a5" class=""
-              onclick="window.open(this.href,'_blank');return false;"><i class="fab fa-linkedin"></i></a>
-            <a href="https://wa.me/237675827455" class="" onclick="window.open(this.href,'_blank');return false;"><i
-                class="fab fa-whatsapp"></i></a>
-            <a href="https://github.com/Temkum" class="" onclick="window.open(this.href,'_blank');return false;"><i
-                class="fab fa-github"></i></a>
+            <a href="https://twitter.com/KumJude?s=09" class="" target="_blank"><i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/kum-jude-tem-031433a5" class="" target="_blank"><i
+                class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/237675827455" class="" target="_blank"><i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://github.com/Temkum" class="" target="_blank"><i class="fab fa-github"></i>
+            </a>
           </div>
           <li class="mt-3">&copy; 2021 TemKum</li>
         </ul>
@@ -84,17 +85,15 @@
     <!-- Page wrapper -->
     <div class="page-wrapper">
 
-
       <div class="container-fluid">
-
         <!-- Static Slider 1  -->
         <div class="static-slider1">
           <div class="container">
             <!-- Row  -->
             <div class="row ">
               <!-- Column -->
-              <div class="col-lg-9 align-self-center" data-aos="fade-right" data-aos-duration="1000">
-                <h2 class="title font-light">I’m Jude, <span class="font-bold">Web Developer,</span> <br>
+              <div class="col-lg-10 align-self-center" data-aos="fade-right" data-aos-duration="1000">
+                <h2 class="title font-light">I’m Jude, <span class="font-bold">Web Developer</span> <br>
                   <span class="font-bold"></span> specializing in
                   <span class="text-info-gradiant font-bold typewrite" data-period="2000"
                     data-type='[ "PHP", "Javascript", "Nodejs", "Laravel", "Web Applications"]'></span>
@@ -243,7 +242,7 @@
               </div>
 
               <!-- Columns -->
-              <div class="col-lg-6 col-md-6 filter php print">
+              <div class="col-lg-6 col-md-6 filter php print mb-5">
                 <div class="overlay-box">
                   <a href="javascript:void(0)" class="img-ho"><img src="images/portfolio/img1.jpg" alt="Portfolio Img"
                       class="img-fluid"></a>
@@ -352,11 +351,11 @@
 
         <!-- ABOUT ME -->
         <!-- Feature 46 -->
-        <div class="spacer feature46 bg-light" style="background-image:url(images/tem.jpg)">
+        <div class="spacer feature46 bg-light" style="background-image:url(images/tem.png)" id="about">
           <div class="container">
             <div class="row">
               <div class="col-lg-5 col-md-6">
-                <h2 class="title-feature">About Me</h2>
+                <h2 class="title-feature" data-aos="slideInDown">About Me</h2>
                 <h6 class="subtitle m-b-40 m-t-20">I'm Jude, born and raised in Buea.</h6>
                 <div class="card card-shadow" data-aos="fade-right" data-aos-duration="1200">
                   <div class="card-body p-30">
@@ -364,7 +363,8 @@
                     <p class="m-t-20">I can help you solve a problem, build a product or grow an existing app. Having
                       efficient work flow process gives me the
                       opportunity to deliver high quality product therefore adding value to your organization.</p>
-                    <a href="javascript:void(0)" class="linking">Let's Talk<i class="ti-arrow-right"></i></a>
+                    <a href="https://wa.me/237675827455" class="linking" target="_blank">Let's Talk<i
+                        class="ti-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -377,58 +377,54 @@
 
       <!-- CONTACT -->
       <!-- Contact 1  -->
-      <div class="contact2">
-        <section id="contact">
-          <div class="row">
-            <div class="container">
-              <div class="spacer">
-                <div class="row m-0">
-                  <div class="col-lg-8">
-                    <div class="contact-box p-r-40 ">
-                      <h4 class="title">Get In Touch</h4>
-                      <form data-aos="" data-aos-duration="">
-                        <div class="row">
-                          <div class="col-lg-6">
-                            <div class="form-group m-t-15">
-                              <input class="form-control" type="text" placeholder="name">
-                            </div>
-                          </div>
-                          <div class="col-lg-6">
-                            <div class="form-group m-t-15">
-                              <input class="form-control" type="text" placeholder="email">
-                            </div>
-                          </div>
-                          <div class="col-lg-12">
-                            <div class="form-group m-t-15">
-                              <textarea class="form-control" rows="3" placeholder="message"></textarea>
-                            </div>
-                          </div>
-                          <div class="col-lg-12 mb-3">
-                            <button type="submit" class="btn btn-danger-gradiant m-t-20 btn-arrow"><span> SUBMIT <i
-                                  class="ti-arrow-right"></i></span></button>
+      <div class="contact2" id="contact">
+        <div class="row">
+          <div class="container">
+            <div class="spacer">
+              <div class="row m-0">
+                <div class="col-lg-8">
+                  <div class="contact-box p-r-40" data-aos="slideInLeft" data-aos-duration="1200">
+                    <h4 class=" title">Get In Touch</h4>
+                    <form>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="form-group m-t-15">
+                            <input class="form-control" type="text" placeholder="name">
                           </div>
                         </div>
-                      </form>
-                    </div>
+                        <div class="col-lg-6">
+                          <div class="form-group m-t-15">
+                            <input class="form-control" type="text" placeholder="email">
+                          </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <div class="form-group m-t-15">
+                            <textarea class="form-control" rows="3" placeholder="message"></textarea>
+                          </div>
+                        </div>
+                        <div class="col-lg-12 mb-3">
+                          <button type="submit" class="btn btn-danger-gradiant m-t-20 btn-arrow"><span> SUBMIT <i
+                                class="ti-arrow-right"></i></span></button>
+                        </div>
+                      </div>
+                    </form>
                   </div>
-                  <div class="col-lg-4">
-                    <div class="detail-box p-40 bg-info" data-aos="" data-aos-duration="1200">
-                      <h2 class="text-white">Buea</h2>
-                      <p class="text-white m-t-30 op-8">+237 675 827 455
-                        <br>
-                      </p>
-                      <p class="text-white op-8">South West Region
-                        <br> Cameroon
-                      </p>
-                    </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="detail-box p-40 bg-info" data-aos="flip-left" data-aos-duration="1200">
+                    <h2 class="text-white">Buea</h2>
+                    <p class="text-white m-t-30 op-8">+237 675 827 455
+                      <br>
+                    </p>
+                    <p class="text-white op-8">South West Region
+                      <br> Cameroon
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-
-        </section>
+        </div>
       </div>
       <!-- End Contact 1  -->
 
@@ -452,14 +448,15 @@
             <div class="col-lg-3 col-md-6 social text-white">
               <!-- <h5 class="m-b-20">Social</h5> -->
               <div class="round-social">
-                <a onclick="window.open(this.href,'_blank');return false;" href="https://twitter.com/KumJude?s=09"
-                  class=""><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/kum-jude-tem-031433a5" class=""
-                  onclick="window.open(this.href,'_blank');return false;"><i class="fab fa-linkedin"></i></a>
-                <a href="https://wa.me/237675827455" class="" onclick="window.open(this.href,'_blank');return false;"><i
-                    class="fab fa-whatsapp"></i></a>
-                <a href="https://github.com/Temkum" class="" onclick="window.open(this.href,'_blank');return false;"><i
-                    class="fab fa-github"></i></a>
+                <a target="_blank" href="https://twitter.com/KumJude?s=09" class=""><i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/kum-jude-tem-031433a5" class="" target="_blank"><i
+                    class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://wa.me/237675827455" class="" target="_blank"><i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://github.com/Temkum" class="" target="_blank"><i class="fab fa-github"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -477,8 +474,8 @@
                   <div class="collapse navbar-collapse" id="header1">
                     <span class="hidden-lg-down">All Rights Reserved by TemKum.</span>
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0 footer-nav">
-                      <li class="nav-item active"><a class="nav-link" href="#">Intro</a></li>
-                      <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                      <li class="nav-item active"><a class="nav-link" href="#intro">Intro</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
                       <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
                       <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
@@ -504,12 +501,13 @@
 
   <!-- SCRIPTS -->
   <script src="js/assets/jquery.min.js"></script>
+  <script src="js/assets/jquery-3.6.0.min.js"></script>
 
   <script src="js/assets/popper.min.js"></script>
   <script src="js/assets/bootstrap.min.js"></script>
   <!-- This is for the animation -->
-  <script src="js/assets/aos.js"></script>
   <script src="js/assets/all.min.js"></script>
+  <script src="js/assets/aos.js"></script>
   <!--Custom JavaScript -->
   <script src="js/assets/custom.min.js"></script>
   <!-- plugins -->
